@@ -6,30 +6,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
+      margin: 0;
+      padding: 0;
       font-family: Arial, sans-serif;
-      background: #f0f2f5;
+      height: 100vh;
+      background: url('https://img.pikbest.com/png-images/qiantu/green-phone-icon-free-png-transparent-layer_2682734.png!sw800') no-repeat center center fixed;
+      background-size: cover;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      margin: 0;
+      position: relative;
     }
+
+    /* Lớp phủ làm mờ */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(255, 255, 255, 0.75); /* Trắng đục */
+      z-index: 0;
+    }
+
     .box {
       background: white;
       padding: 30px 40px;
       border-radius: 12px;
       text-align: center;
       box-shadow: 0 0 12px rgba(0,0,0,0.1);
+      position: relative;
+      z-index: 1;
     }
+
     h1 {
       color: #1877f2;
       font-size: 24px;
       margin-bottom: 10px;
     }
+
     p {
       font-size: 16px;
       color: #333;
     }
+
     #countdown {
       font-weight: bold;
       color: #ff4444;
@@ -51,7 +69,7 @@
       countdownEl.textContent = countdown;
       if (countdown <= 0) {
         clearInterval(timer);
-        // 👉 Place your Adsterra link here:
+        // 👉 Your redirect link here:
         window.location.href = "https://seventhdisdainunlucky.com/ehsj873i?key=b34cc7c4ee8b77a145388ddd572011cd";
       }
     }, 1000);

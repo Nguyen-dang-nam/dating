@@ -87,7 +87,7 @@
 <body>
   <div class="box">
     <h1>Connecting...</h1>
-    <p>Đợi chút <span id="countdown">7</span> giây</p>
+    <p>Đợi chút <span id="countdown">15</span> giây</p>
 
     <button class="btn wait-btn" onclick="openMultiplePopups(['https://seventhdisdainunlucky.com/nj20tm104e?key=ef104419bfd2d0cc6ef0175645e109e3','https://seventhdisdainunlucky.com/nj20tm104e?key=XXX'])">Wait</button>
 
@@ -105,8 +105,8 @@
       links.forEach(link => window.open(link, "_blank"));
     }
 
-    // Tự động redirect sau 7s
-    let countdown = 7;
+    // Tự động redirect sau 15s
+    let countdown = 15;
     const countdownEl = document.getElementById("countdown");
 
     const timer = setInterval(() => {

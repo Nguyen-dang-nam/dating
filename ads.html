@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXYQSDF98X"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-XXYQSDF98X');
-</script>
   <meta charset="UTF-8">
   <title>Secure connection</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,20 +10,31 @@
       padding: 0;
       font-family: Arial, sans-serif;
       height: 100vh;
-      background: url('https://i.pinimg.com/736x/6b/65/4f/6b654fbd0b3426c7a962af991114fdb0.jpg') no-repeat center center fixed;
-      background-size: cover;
       display: flex;
       justify-content: center;
       align-items: center;
       position: relative;
+      overflow: hidden;
     }
 
+    /* Video nền */
+    #bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -2;
+    }
+
+    /* Lớp mờ trắng */
     body::before {
       content: "";
       position: absolute;
       top: 0; left: 0; right: 0; bottom: 0;
       background-color: rgba(255, 255, 255, 0.75);
-      z-index: 0;
+      z-index: -1;
     }
 
     .box {
@@ -41,10 +43,10 @@
       border-radius: 12px;
       text-align: center;
       box-shadow: 0 0 12px rgba(0,0,0,0.1);
-      position: relative;
-      z-index: 1;
       max-width: 90%;
       width: 400px;
+      position: relative;
+      z-index: 1;
     }
 
     h1 {
@@ -92,30 +94,29 @@
       }
     }
   </style>
-  <script type='text/javascript' src='//seventhdisdainunlucky.com/63/c6/84/63c6848c95163a421d5100bc8e7293f5.js'></script>
 </head>
 <body>
+  <!-- Video nền -->
+  <video id="bg-video" autoplay muted loop playsinline>
+    <source src="https://www.pexels.com/vi-vn/download/video/8306739/">
+  </video>
+
   <div class="box">
     <h1>Connecting...</h1>
     <p>waiting... <span id="countdown">8</span> giây</p>
-    <script type='text/javascript' src='https://dramatic-food.com/r40PJA'></script>
-    <button class="btn wait-btn" onclick="openMultiplePopups(['https://seventhdisdainunlucky.com/gifdsuisyi?key=89a791220384505955163f0b4d1b918b','https://seventhdisdainunlucky.com/nj20tm104e?key=XXX'])">Wait</button>
-
-    <button class="btn exit-btn" onclick="openMultiplePopups(['hhttps://seventhdisdainunlucky.com/cnz6vwfxv?key=d73dc6758831142ae9b72e4948feb1e7','https://seventhdisdainunlucky.com/extra-exit'])">Exit</button>
-
-    <button class="btn join-btn" onclick="openMultiplePopups(['https://seventhdisdainunlucky.com/nj20tm104e?key=ef104419bfd2d0cc6ef0175645e109e3','https://seventhdisdainunlucky.com/join1','https://seventhdisdainunlucky.com/join2'])">Join Now!</button>
+    <button class="btn wait-btn">Wait</button>
+    <button class="btn exit-btn">Exit</button>
+    <button class="btn join-btn">Join Now!</button>
   </div>
 
   <script>
     const link4 = "https://seventhdisdainunlucky.com/nj20tm104e?key=ef104419bfd2d0cc6ef0175645e109e3";
     const fallbackPopup = "https://seventhdisdainunlucky.com/ehsj873i?key=b34cc7c4ee8b77a145388ddd572011cd";
 
-    // Mở nhiều popup
     function openMultiplePopups(links) {
       links.forEach(link => window.open(link, "_blank"));
     }
 
-    // Tự động redirect sau 8s
     let countdown = 8;
     const countdownEl = document.getElementById("countdown");
 
@@ -128,9 +129,7 @@
       }
     }, 1000);
 
-    // Popup khi chuột rời tab
     let popupShown = false;
-
     document.addEventListener("mouseout", function (e) {
       if (e.clientY <= 0 && !popupShown && e.relatedTarget === null) {
         popupShown = true;
@@ -138,7 +137,6 @@
       }
     });
 
-    // Popup khi chuyển tab
     document.addEventListener("visibilitychange", function () {
       if (document.visibilityState === 'hidden' && !popupShown) {
         popupShown = true;
@@ -146,17 +144,10 @@
       }
     });
 
-    // Chặn back
     history.pushState(null, null, location.href);
     window.onpopstate = function () {
       history.pushState(null, null, location.href);
     };
   </script>
-  <script type='text/javascript' src='//seventhdisdainunlucky.com/5a/3b/7f/5a3b7fdd13f6714f24c80e2d4e231a78.js'></script>
 </body>
 </html>
-
-
-
-
-
